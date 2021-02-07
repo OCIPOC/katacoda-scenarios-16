@@ -1,48 +1,36 @@
 {
-  "title": "Jupyter Notebook",
-  "description": "A scenario to play with Jupyter Notebooks. You will have access to a Jupyter Scipy Notebook based on the jupyter/scipy-notebook image. You can create and load and run notebooks.",
-  "difficulty": "beginner",
-  "time": "10 minutes (to get going)",
-  "details": {
-    "steps": [{
-      "title": "Step 1 - Run the Jupyter Notebook environment",
-      "text": "step1.md"
-    },{
-      "title": "Step 2 - Access the Jupyter Notebook",
-      "text": "step2.md"
-    }],
-    "intro": {
-      "text": "intro.md",
-      "credits": ""
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "client": [
-        {
-          "file": "prepareContainer.sh",
-          "target": "~/"
+    "id": "custom-events",
+    "title": "Raise Custom Events From Environments",
+    "description": "Raise events from the user environment to Katacoda",
+    "details": {
+        "intro": {
+          "text": "intro.md",
+          "code": "env-init.sh",
+          "credits": ""
         },
-        {
-          "file": "runPrep.sh",
-          "target": "~/"
-        }
-      ]
+        "steps": [
+            {
+                "title": "Custom events",
+                "text": "step1.md"
+            }
+        ]
+    },
+    "asyncFiles": ["index.html"],
+    "environment": {
+        "hidefinish": true,
+        "showdashboard": true,
+        "delayToSaveFileAfterStopTypingMilliseconds": 2000,
+        "dashboards": [
+          {"name": "Web Application", "port": 3000}
+        ],
+        "uilayout": "editor-iframe-split",
+        "uisettings": "html"
+    },
+    "backend": {
+      "imageid": "nodejs:12",
+      "port": 3000
+    },
+    "events": {
+      "hideprogressbar": "reload-finished"
     }
-  },
-  "environment": {
-    "uilayout": "terminal-iframe",
-    "showdashboard": true,
-    "dashboards": [
-      {
-        "name": "Jupyter Notebook",
-        "port": 8888
-      }
-    ],
-    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
-  },
-  "backend": {
-    "imageid": "ubuntu:1804"
-  }
 }

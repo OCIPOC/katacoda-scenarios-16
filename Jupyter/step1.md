@@ -1,29 +1,63 @@
-You will now run a Docker container for Jupyter Notebook. Note: this may take up to 3 minutes, because of the size of the container image.
+Katacoda provides a service that listens to events defined in the scenario and allows to override the default behavior of the platform.
+<<<<<<< HEAD
+Let's see an example, in this scenario, we use the layout `editor-iframe-split`, and the pages updated in the editor are served by a nodejs and they displayed in the iframe.
 
-Run the Jupyter Notebook
-Run the Jupyter Notebook container image:
+Give the app a few minutes to start, and then, click in the reload button on the right. You should see the result of the content of index.html displayed in the iframe.
 
-docker run -p 8888:8888 -d --name jupyter jupyter/scipy-notebook:83ed2c63671f{{execute}}
+By default, after the user stops typing, the editor saves the file. The numbers of seconds that the editor waits to save the file can be defined in the scenario with the property `delayToSaveFileAfterStopTypingMilliseconds` in the environment:
+=======
+Let's see an example, in this scenario, we use the layout `editor-iframe-split`, and the pages updated in the editor are served by a nodejs and display in the iframe.
 
-Further prepare the container
-To prepare the container we will run a script inside the container to install several Python packages
+Give the app a few minutes to start, and then, click in the reload button on the right. You should see the result of the content of index.html displayed in the iframe.
 
-Run this script to execute these steps:
+By default, after the user stop typing, the editor saves the file. The numbers of seconds that the editor waits to save the file can be defined in the scenario with the property `delayToSaveFileAfterStopTypingMilliseconds` in the environment:
+>>>>>>> master
 
-copy the script prepareContainer.sh into the container
-copy the script, make the copy executable and then run the script inside the container - this will install several Python packages using pip
-restart the container
-sh runPrep.sh{{execute}}
+<pre class="file">
+  "environment": {
+      ...
+      "delayToSaveFileAfterStopTypingMilliseconds": 2000,
+  }
+</pre>
 
-Notes on what is happening under the covers
-These are the individual steps inside this script. You do not have to execute them - because they are in the runPrep.sh script.
+<<<<<<< HEAD
+When a file is saved a progress bar is shown, and the progress bar is hidden when the file was successfully saved.
+But for our example, we need to stop to show the progress bar when the gulp task `reload` finished.
 
-First, copy the script into the container docker cp prepareContainer.sh jupyter:/home/jovyan/prepareContainerRoot.sh
+To do that, we need to need to send a message to the EventService, when the event happens our environment, and indicating the action we want to perform. The list of all actions / events supported are available in this [link](https://katacoda.com/docs/scenarios/custom-events)
 
-This will copy the local file prepareContainer.sh into the container's directory /home/jovyan as prepareContainerRoot.sh; it will be a root owned file that cannot be run straightaway.
+In this example, we know when the gulp `reload` task finish, and after this event, we can call to the EventService to send the `hideprogressbar` message. See `gulpfile.js`{{open}}, function callEventService.
+=======
+When a file is saved a progress bar is shown, and the progress bar is hidden when the file was successfully saved. But for our example, we need to stop showing the progress bar when the gulp task `reload` finished.
 
-Next, copy the script, make the copy executable and then run the script inside the container: docker exec -d jupyter bash -c 'cp ~/prepareContainerRoot.sh ~/prepareContainer.sh && chmod +x ~/prepareContainer.sh'
+To do that, we need to need to send a message to the EventService, indicating the event we need to raise. The list of all events supported are available in this [link](https://katacoda.com/docs/scenarios/custom-events)
 
-Next, run the script inside the container: docker exec -d jupyter sh /home/jovyan/prepareContainer.sh
+In this example, after the `reload` task, we call to the EventService to send the `reload-finished` message. See `gulpfile.js`{{open}}, function callEventService
+>>>>>>> master
 
-Finally restart the docker container docker restart jupyter
+## Request to Event Service
+The request to the EventService should follow this structure:
+
+`curl -X POST https://environment-events.katacoda.com -d "socket=$1&message=message"`
+
+The socket parameter can be retrieved from the file `/tmp/socket`
+
+<<<<<<< HEAD
+## Index.json
+
+In the file index.json we need to specify all the messages we will send from in the environment, for example:
+
+<pre class="file">
+"actions": {
+  "hideprogressbar": {}
+=======
+## Mapping event in index.json
+
+In the file index.json the message received in the EventService should be mapped to which event we want to raise, for example:
+
+<pre class="file">
+"events": {
+  "hideprogressbar": "reload-finished"
+>>>>>>> master
+}
+</pre>
