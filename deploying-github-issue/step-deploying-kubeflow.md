@@ -2,7 +2,7 @@ With Kubeflow being an extension to Kubernetes, all the components need to be de
 
 The team have provided an installation script which uses Ksonnet to deploy Kubeflow to an existing Kubernetes cluster. Ksonnet requires a valid Github token. The following can be used within Katacoda. Run the command to set the required environment variable.
 
-`export GITHUB_TOKEN=99510f2ccf40e496d1e97dbec9f31cb16770b884`{{execute}}
+`export GITHUB_TOKEN=1d13994dcf8bd5b0440c996510400ff638945fdc`{{execute}}
 
 Once installed, you can run the installation script:
 
