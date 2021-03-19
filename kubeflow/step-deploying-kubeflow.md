@@ -7,7 +7,7 @@ The team have provided an installation script which uses Ksonnet to deploy Kubef
 Once installed, you can run the installation script:
 
 ```
-export KUBEFLOW_VERSION=0.2.5
+export KUBEFLOW_VERSION=1.0
 curl https://raw.githubusercontent.com/kubeflow/kubeflow/v${KUBEFLOW_VERSION}/scripts/deploy.sh | bash
 ```{{execute}}
 
