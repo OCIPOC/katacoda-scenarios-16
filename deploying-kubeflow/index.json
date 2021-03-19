@@ -34,15 +34,14 @@
         "text": "step7.md"
       }
     ],
-    "intro": {
+       "intro": {
       "text": "intro.md",
       "code": "foreground-init.sh",
       "courseData": "env-init.sh"
     },
     "finish": {
       "text": "finish.md"
-    }
-  },
+    },
     "assets": {
       "host01": [
         {"file": "example.yaml", "target": "/root"},
@@ -51,9 +50,12 @@
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "terminal",
+    "showdashboard": true,
+    "dashboards": [{"name": "Jupyterhub", "port": 80}, {"name": "Dashboard", "port": 30080}]
   },
   "backend": {
-    "imageid": "kubernetes-kubeflow"
+    "imageid": "kubernetes-kubeflow",
+    "port": 80
   }
 }
