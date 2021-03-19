@@ -6,16 +6,26 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
-        "text": "step1.md"
+        "title": "Deploy Kubeflow",
+        "text": "step-deploying-kubeflow.md"
       },
       {
-        "title": "Step 2",
+        "title": "Deploy PyTorch Extension",
         "text": "step2.md"
+      },
+      {
+        "title": "Deploy PyTorch Workload",
+        "text": "step3.md"
+      },
+      {
+        "title": "View Progress",
+        "text": "step4.md"
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "code": "foreground-init.sh",
+      "courseData": "env-init.sh"
     },
     "finish": {
       "text": "finish.md"

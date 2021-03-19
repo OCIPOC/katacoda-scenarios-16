@@ -10,4 +10,4 @@ This is deployed via Kubectl, the Kubernetes CLI.
 
 The Kubeflow PyTorch Operator and Kubernetes will schedule the workload and start the required number of replicas. You can view the status with `kubectl get pods -l pytorch_job_name=distributed-mnist`{{execute}}
 
-You should see one master and three workers created. The next step will discuss how to view the results. 
+You should see one master and three workers created. The next step will discuss how to view the results.
