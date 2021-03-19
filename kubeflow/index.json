@@ -29,6 +29,11 @@
     },
     "finish": {
       "text": "finish.md"
+    }, 
+    "assets":{
+      "host1": [
+        {"file": "example.yml", "target": "/root"}
+      ]
     }
   },
   "environment": {
