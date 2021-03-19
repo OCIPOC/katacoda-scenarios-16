@@ -32,7 +32,7 @@
     }, 
     "assets":{
       "host1": [
-        {"file": "example.yml", "target": "/root"}
+        {"file": "example.yaml", "target": "/root"}
       ]
     }
   },
