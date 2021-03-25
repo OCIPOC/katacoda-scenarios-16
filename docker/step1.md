@@ -1,20 +1,21 @@
-In this step Docker is up and running. A first image has been already pulled. You may verify this by issuing the command:
+En este paso, Docker está en funcionamiento. Ya se ha extraído una primera imagen. Puede verificar esto emitiendo el comando:
 
 `docker images`{{execute}}
 
-Along other images the `busybox` image should be displayed.
+Junto con otras imágenes, debería mostrarse la imagen de "busybox".
 
-An image name consists of several parts:
-- image name: here `busybox`
-- tag: specifies a special version, defaults to `latest`
+El nombre de una imagen consta de varias partes:
+- nombre de la imagen: aquí `busybox`
+- etiqueta: especifica una versión especial, por defecto es `latest`
 
-Now we‘re going to pull a Nginx image from Dockerhub. Issue the command:
+Ahora vamos a extraer una imagen de Nginx de Dockerhub. Emita el comando:
 
 `docker pull nginx`{{execute}}
 
-and see, whether the image has been stored locally:
+y vea si la imagen se ha almacenado localmente:
 
 `docker images`{{execute}}
 
-What happened? The Docker daemon contacted the default registry ([Dockerhub](https://hub.docker.com)) and checked, whether an image exists with the name `nginx`.
-We didn‘t specify a special image version, thus Docker requested to pull the `latest` tag.
+¿Qué sucedió? El demonio de Docker se puso en contacto con el registro predeterminado ([Dockerhub] (https://hub.docker.com)) y comprobó si existe una imagen con el nombre `nginx`.
+
+No especificamos una versión de imagen especial, por lo que Docker solicitó extraer la etiqueta `latest`.

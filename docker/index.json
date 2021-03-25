@@ -17,6 +17,18 @@
 			"title": "Image pull (2)",
 			"verify": "step2-verify.sh",
 			"text": "step2.md"
+		},
+		{
+			"title": "Create and run container (1)",
+			"text": "step3.md"
+		},
+		{
+			"title": "Create and run container (2)",
+			"text": "step4.md"
+		},
+		{
+			"title": "Cleanup container and images",
+			"text": "step5.md"
 		}],
 		"intro": {
 			"courseData": "env-init.sh",

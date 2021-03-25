@@ -1,1 +1,1 @@
-In this scenario we learn to use basic Docker commands, such as `docker pull`, `docker run` or `docker images`.
+En este escenario, aprenderemos a usar comandos básicos de Docker, como `docker pull`, `docker run` y `docker images`.

@@ -1,12 +1,12 @@
-Using the latest and greatest versions is fine, but in practise you may have the need to use a specific application version. Here image tags come into play. 
-Issue the following command to pull the version 1.10 of Nginx:
+Usar las últimas y mejores versiones está bien, pero en la práctica es posible que tenga que usar una versión específica de la aplicación. Aquí entran en juego las etiquetas de imagen.
+Emita el siguiente comando para extraer la versión 1.10 de Nginx:
 
 `docker pull nginx:1.10-alpine`{{execute}}
 
-Verify that the image has been stored locally:
+Verifique que la imagen se haya almacenado localmente:
 
 `docker images`{{execute}}
 
-What happened? The Docker daemon contacted the default registry ([Dockerhub](https://hub.docker.com)) and checked, whether an image exists with the name `nginx` and the tag `1.10-alpine`.
+¿Qué sucedió? El demonio de Docker se puso en contacto con el registro predeterminado ([Dockerhub] (https://hub.docker.com)) y comprobó si existe una imagen con el nombre `nginx` y la etiqueta` 1.10-alpine`.
 
-Note the `-alpine` extension: Most images specify the OS variant of the base image in their tags. Here Nginx runs on an Alpine Linux images. We'll cover the OS base images later.
+Tenga en cuenta la extensión `-alpine`: la mayoría de las imágenes especifican la variante del sistema operativo de la imagen base en sus etiquetas. Aquí, Nginx se ejecuta en imágenes de Alpine Linux. Cubriremos las imágenes de la base del sistema operativo más adelante.
