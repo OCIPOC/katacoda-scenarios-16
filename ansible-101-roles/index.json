@@ -1,0 +1,51 @@
+{
+  "pathwayTitle": "DevOps 101 - Tenerife",
+  "title": "Ansible 101 - Los Roles",
+  "description": "¡Controla las funciones de los distintos directorios de los Roles de Ansible en este curso interactivo pensado para DevOps!",
+  "difficulty": "Principiante-Intermedio",
+  "time": "25 minutes",
+  "backend": {
+    "imageid": "ansible"
+  },
+  "environment": {
+    "uilayout": "editor-terminal",
+    "icon": "fa-ansible",
+    "uisettings": "yaml",
+    "uimessage1": "\u001b[32mEsta es tu terminal del curso.\r\nEscribe aqui tus comandos\u001b[m\r\n"
+  },
+  "details": {
+    "steps": [{
+      	"title": "El directorio 'defaults'",
+      	"text": "steps/step1.md"
+      }, {
+      	"title": "El directorio 'templates'",
+      	"text": "steps/step2.md"
+      }, {
+      	"title": "El directorio 'vars'",
+      	"text": "steps/step3.md"
+      }, {
+      	"title": "El directorio 'tasks'",
+      	"text": "steps/step4.md"
+      }, {
+       	"title": "Llegó la hora de la verdad...",
+      	"text": "steps/step5.md"
+      }, {
+        "title": "El siguiente paso te toca darlo a tí.",
+        "text": "steps/step6.md"
+      }],
+    "intro": {
+      "text": "stages/intro.md",
+      "credits": "DevOps TF - Óscar Díaz Domínguez",
+      "courseData": "script/init-scenario.sh"
+    },
+    "finish": {
+      "text": "stages/finish.md"
+    },
+    "assets": { 
+      "client": [{
+        "file": "playbook.yml", 
+        "target": "/home/scrapbook/tutorial/ansible/"
+      }] 
+    }
+  }
+}

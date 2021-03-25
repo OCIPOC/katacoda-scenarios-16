@@ -1,0 +1,37 @@
+{
+  "pathwayTitle": "DevOps 101 - Tenerife",
+  "title": "Git Playground",
+  "description": "Sin pasos, sin guias, juguetea con Git...",
+  "difficulty": "Playground",
+  "time": "Undefined",
+  "backend": {
+    "imageid": "git"
+  },
+  "environment": {
+    "uilayout": "editor-terminal",
+    "hidefinish": "true",
+    "uimessage1": "\u001b[32mEsta es tu terminal del playground.\r\nEscribe aqui tus comandos\u001b[m\r\n"
+  },
+  "details": {
+    "steps": [{
+      	"title": "Juguetea con Git",
+      	"text": "steps/step1.md"
+      }],
+    "intro": {
+      "text": "stages/intro.md",
+      "credits": "DevOps TF - Antonio Fumero",
+      "courseData": "scripts/init-scenario.sh"
+    },
+	"assets": { 
+      "client": [{
+        "file": "App.java", 
+        "target": "/home/scrapbook/tutorial/git/sample-app/src/main/java/com/example/app/"
+      }, {
+        "file": "AppTest.java", 
+        "target": "/home/scrapbook/tutorial/git/sample-app/src/test/java/com/example/app/"
+      }, {
+        "file": "pom.xml", 
+        "target": "/home/scrapbook/tutorial/git/sample-app/"
+		}]}
+  }
+}
