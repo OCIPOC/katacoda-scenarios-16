@@ -16,6 +16,6 @@ y vea si la imagen se ha almacenado localmente:
 
 `docker images`{{execute}}
 
-¿Qué sucedió? El demonio de Docker se puso en contacto con el registro predeterminado ([Dockerhub] (https://hub.docker.com)) y comprobó si existe una imagen con el nombre `nginx`.
+¿Qué sucedió? Docker daemon se puso en contacto con el registro predeterminado ([Dockerhub] (https://hub.docker.com)) y comprobó si existe una imagen con el nombre `nginx`.
 
 No especificamos una versión de imagen especial, por lo que Docker solicitó extraer la etiqueta `latest`.

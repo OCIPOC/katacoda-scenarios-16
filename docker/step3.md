@@ -12,13 +12,13 @@ Como se sugiere en el resultado del ejemplo "Hola, mundo", probamos con un ejemp
 
 Parece que no pasa nada, no hay salida en absoluto. Abortar el comando `run` presionando <kbd>⌃CTRL</kbd>-<kbd>c</kbd> 
 
-¿Qué sucedió? El Docker daemon creó una base de contenedor en el parámetro que especificamos en el comando `docker run`. Solo especificamos el nombre de la imagen, por lo que el contenedor se ha iniciado en primer plano (comportamiento predeterminado).
+¿Qué sucedió? Docker daemon creó una base de contenedor en el parámetro que especificamos en el comando `docker run`. Solo especificamos el nombre de la imagen, por lo que el contenedor se ha iniciado en primer plano (comportamiento predeterminado).
 
 Para iniciar el contenedor en modo `detached` agregue la bandera` -d`:
 
 `docker run -d nginx`{{execute}}
 
-El contenedor se inicia, el demonio de la ventana acoplable devuelve un hash único. Podemos verificar que el contenedor se ha iniciado con el comando `docker ps`:
+El contenedor se inicia, daemon de la ventana acoplable devuelve un hash único. Podemos verificar que el contenedor se ha iniciado con el comando `docker ps`:
 
 `docker ps`{{execute}}
 
