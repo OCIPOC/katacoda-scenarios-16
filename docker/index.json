@@ -1,0 +1,43 @@
+{
+	"backend": {
+		"imageid": "docker"
+	},
+	"environment": {
+		"uilayout": "terminal",
+		"hideintro": false,
+		"hidefinish": false
+	},
+	"details": {
+		"steps": [{
+			"title": "Image pull (1)",
+			"verify": "step1-verify.sh",
+			"text": "step1.md"
+		},
+		{
+			"title": "Image pull (2)",
+			"verify": "step2-verify.sh",
+			"text": "step2.md"
+		},
+		{
+			"title": "Create and run container (1)",
+			"text": "step3.md"
+		},
+		{
+			"title": "Create and run container (2)",
+			"text": "step4.md"
+		},
+		{
+			"title": "Cleanup container and images",
+			"text": "step5.md"
+		}],
+		"intro": {
+			"courseData": "env-init.sh",
+			"text": "intro.md"
+		},
+		"finish": {
+			"text": "finish.md"
+		}
+	},
+	"title": "Docker container",
+	"description": "In this exercise a Docker image will be pulled and started as container."
+}
