@@ -1,6 +1,6 @@
 ¡Bienvenido al curso interactivo para **aprender a crear y utilizar las distintas funcionalidades de los roles de Ansible**!
 
-Si estás aquí, es muy probable que ya sepas un poco de Ansible y cómo crear un Playbook o un Rol muy simple... Si no es así, **¡te recomiendo ver nuestro otro curso interactivo que sirve como introducción al fabuloso mundo de Ansible!** Lo tienes [aquí](https://katacoda.com/devopstf/scenarios/ansible-101).
+Si estás aquí, es muy probable que ya sepas un poco de Ansible y cómo crear un Playbook o un Rol muy simple... Si no es así, **¡te recomiendo ver nuestro otro curso interactivo que sirve como introducción al fabuloso mundo de Ansible!** Lo tienes [aquí](http://bootcampai.org/ansible1).
 
 # ¿Qué aprenderé en este curso?
 

@@ -1,4 +1,4 @@
-¡Bienvenido al curso básico de **DevOpsTF** para aprender los **fundamentos de Git**!
+¡Bienvenido al curso básico de **DevOps** para aprender los **fundamentos de Git**!
 
 Este curso se basa en un escenario que iremos recorriendo de la mano, paso a paso, con la ejecución guiada de una serie de comandos ``bash`` básicos.
 
