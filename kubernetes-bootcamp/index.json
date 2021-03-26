@@ -1,0 +1,35 @@
+{
+  "title": "Kubernetes Bootcamp",
+  "description": "Desplegar un clúster de Kubernetes",
+  "difficulty": "Beginner",
+  "time": "20",
+  "details": {
+    "steps": [
+      {
+        "title": "Despelgar el clúster",
+        "text": "step1.md"
+      },
+      {
+        "title": "Versión del clúster",
+        "text": "step2.md"
+      },
+      {
+        "title": "Detalles del clúster",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "courseData": "env-init.sh",
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "minikube"
+  }
+}
