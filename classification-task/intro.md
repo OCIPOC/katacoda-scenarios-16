@@ -1,5 +1,5 @@
-Deep Learning (DL) is the set of techniques that work especially well with computer vision and natural language processing tasks. DL is the part of a broader area called Machine Learning (ML) that in its classical form address problems like classification, regression or clustering.
+El aprendizaje profundo (DL) es el conjunto de técnicas que funcionan especialmente bien con la visión por computadora y las tareas de procesamiento del lenguaje natural. DL es la parte de un área más amplia llamada Machine Learning (ML) que en su forma clásica aborda problemas como clasificación, regresión o agrupamiento.
 
-This scenario is the first one in the 'Deep Learning with TensorFlow' cycle. It doesn't refer to TensorFlow yet, but instead, aims at introducing the concepts of ML and describing the classification problem.
+Este escenario es el primero en el ciclo 'Aprendizaje profundo con TensorFlow'. Todavía no se refiere a TensorFlow, sino que tiene como objetivo presentar los conceptos de AA y describir el problema de clasificación.
 
-To take the most of this course, you should know how to program in Python or another language that would allow you to understand Python syntax.
+Para aprovechar al máximo este curso, debe saber programar en Python u otro lenguaje que le permita comprender la sintaxis de Python..

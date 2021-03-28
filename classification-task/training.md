@@ -1,11 +1,11 @@
-The training of the model is the essential part of the machine learning process. This where all the fun and magic is happening. While going through the data, the algorithm is adjusting the coefficients to fit them the best.
+El entrenamiento del modelo es la parte esencial del proceso de aprendizaje automático. Aquí es donde está sucediendo toda la diversión y la magia. Mientras revisa los datos, el algoritmo ajusta los coeficientes para que se ajusten mejor.
 
-In case of Linear Regression that we'll use it means it will take some _loss function_ into account and will try to _minimise_ it. Don't worry; we won't be writing it ourselves here. Instead, we're going to use the black-boxed class from the `sklearn` library.
+En el caso de Regresión lineal, que lo usemos significa que tendrá en cuenta alguna _ función de pérdida_ e intentará _minimizarla_. No te preocupes; no lo escribiremos nosotros mismos aquí. En su lugar, usaremos la clase en caja negra de la biblioteca `sklearn`.
 
 <pre class="file" data-filename="classification.py" data-target="append">
-# Create and train the model
+# Crea y entrena el modelo.
 model = sklearn.linear_model.LogisticRegressionCV();
 model.fit(train[['x1', 'x2']], train['label']);
 </pre>
 
-Once the algorithm is done, we get the ready to use, _trained model_. Later it can be applied to predict new examples' colours.
+Una vez hecho el algoritmo, tenemos el _modelo entrenado_ listo para usar. Posteriormente se puede aplicar para predecir los colores de nuevos ejemplos.

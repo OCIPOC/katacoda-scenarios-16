@@ -1,9 +1,9 @@
-## Congratulations!
+## Felicidades!
 
-You've completed **Classification task** scenario.
+Ha completado el escenario ** Tarea de clasificación **.
 
-You've learned the basics concepts of machine learning process:
-* Classification problem
-* Logistic regression
-* Training and Test dataset split
-* Model Training and evaluation
+Ha aprendido los conceptos básicos del proceso de aprendizaje automático:
+* Problema de clasificación
+* Regresión logística
+* División del conjunto de datos de entrenamiento y prueba
+* Modelo de formación y evaluación

@@ -1,10 +1,10 @@
-Before we start the training phase, we are going to prepare the data. Usually, data we get from the real world are by no means clean or ready to use. They demand a lot of transformations, cleaning and very often feature engineering.
+Antes de comenzar la fase de entrenamiento, vamos a preparar los datos. Por lo general, los datos que obtenemos del mundo real no están limpios ni listos para usar. Exigen muchas transformaciones, limpieza y muy a menudo características de ingeniería.
 
-Our example is prepared especially for the scenario purposes, so the only thing we need to do is to split the data into the training and testing sets. The reason to do it is to check later how does the model perform on the data it didn't see in the training phase. Checking only the training data accuracy could be misleading, as the algorithms could have just memorised the records ([overfitting](https://en.wikipedia.org/wiki/Overfitting)) instead of generalising the rule.
+Nuestro ejemplo está preparado especialmente para los propósitos del escenario, por lo que lo único que debemos hacer es dividir los datos en los conjuntos de entrenamiento y prueba. La razón para hacerlo es verificar más adelante cómo funciona el modelo con los datos que no vio en la fase de entrenamiento. Verificar solo la precisión de los datos de entrenamiento podría ser engañoso, ya que los algoritmos podrían haber memorizado los registros ([overfitting](https://en.wikipedia.org/wiki/Overfitting)) en lugar de generalizar la regla.
 
-Depending on the dataset we could think of different train-test split ratios. In our example, we'll just try 30%-70%:
+Dependiendo del conjunto de datos, podríamos pensar en diferentes proporciones de división de prueba de tren. En nuestro ejemplo, solo probaremos 30% -70%:
 
 <pre class="file" data-filename="classification.py" data-target="append">
-# Split the data into train and test
+# Divide los datos en train y test
 train, test = train_test_split(data, test_size=0.3)
 </pre>
