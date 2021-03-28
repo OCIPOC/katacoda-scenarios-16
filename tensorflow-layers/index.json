@@ -1,0 +1,54 @@
+{
+  "title": "Layers in Tensorflow",
+  "description": "Scenarios for the tutorial on how to build deeply layered Neural Networks in TensorFlow.",
+  "difficulty": "intermediate",
+  "time": "30 minutes",
+  "details": {
+    "steps": [{
+      "title": "MNIST Dataset",
+      "text": "dataset.md"
+      },
+      {
+        "title": "Dense layer",
+        "text": "dense.md"
+      },
+      {
+        "title": "Hidden dense layer",
+        "text": "dense-relu.md"
+      },
+      {
+        "title": "Convolutional layer",
+        "text": "convolutional.md"
+      },
+      {
+        "title": "Two Convolutional layers",
+        "text": "convolutional2.md"
+      },
+      {
+        "title": "Dropout",
+        "text": "dropout.md"
+      }],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [{"file": "help.py", "target": "~/"},
+                {"file": "dense.py", "target": "~/"},
+                {"file": "dense-relu.py", "target": "~/"},
+                {"file": "conv.py", "target": "~/"},
+                {"file": "2-conv.py", "target": "~/"},
+                {"file": "dropout.py", "target": "~/"}]
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart python using `python` command.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "tensorflow"
+  }
+}
