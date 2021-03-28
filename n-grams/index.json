@@ -1,0 +1,43 @@
+{
+  "title": "Introduction to n-grams",
+  "description": "Introduction to n-grams",
+  "difficulty": "beginner",
+  "time": "20 minutes",
+  "details": {
+    "steps": [
+    {
+      "title": "Bigrams",
+      "text": "bigrams.md"
+    },
+    {
+      "title": "n-grams",
+      "text": "n-grams.md"
+    },
+    {
+      "title": "Read data",
+      "text": "read_data.md"
+    },
+    {
+      "title": "Count vector",
+      "text": "count_vector.md"
+    }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [{"file": "data_reader.py", "target": "~/"}]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart using `python` command\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "python-nltk"
+  }
+}

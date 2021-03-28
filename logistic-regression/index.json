@@ -1,0 +1,43 @@
+{
+  "title": "Logistic Regression",
+  "description": "Using logistic regression to the non lineary separable data classification",
+  "difficulty": "beginner",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Dataset",
+      "text": "dataset.md"
+      },
+      {
+        "title": "Train/Test dataset split",
+        "text": "split.md"
+      },
+      {
+        "title": "Machine Learning Training",
+        "text": "training.md"
+      },
+      {
+        "title": "Algorithm evaluation",
+        "text": "evaluation.md"
+      }],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [{"file": "helper.py", "target": "~/"},
+                 {"file": "classification.py", "target": "~/"},
+                 {"file": "non_linear.csv", "target": "~/"}]
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart python using `python` command.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "tensorflow"
+  }
+}

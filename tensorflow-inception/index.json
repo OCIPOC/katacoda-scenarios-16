@@ -1,0 +1,42 @@
+{
+  "title": "TensorFlow Inception",
+  "description": "Scenario for using TensorFlow Inception from docker image",
+  "difficulty": "beginner",
+  "time": "10 minutes",
+  "details": {
+    "steps": [{
+      "title": "Introduction to Inception",
+      "text": "inception.md"
+      },
+      {
+        "title": "Serving the Inception",
+        "text": "server.md"
+      },
+      {
+        "title": "Connecting to the server",
+        "text": "client.md"
+      },
+      {
+        "title": "Downloading the images",
+        "text": "images.md"
+      },
+      {
+        "title": "Classifying new examples",
+        "text": "query.md"
+      }],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "tensorflow-docker"
+  }
+}
