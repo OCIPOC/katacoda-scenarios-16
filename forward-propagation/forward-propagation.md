@@ -1,17 +1,17 @@
-It's time to use the `forward_propagation` function. This will require getting the feature data from both datasets and setting the values for the weights and bias vectors.
+Es hora de usar la función `forward_propagation`. Esto requerirá obtener los datos de características de ambos conjuntos de datos y establecer los valores para los pesos y los vectores de sesgo.
 
-## Task 4
-The first thing you need to do is to filter the input data from the datasets (`linear_data` and `non_linear_data`). This means we do not include the label column. The following code is showing how to get the (x1,x2) columns and transform them into the np array.
+## Tarea 4
+Lo primero que debe hacer es filtrar los datos de entrada de los conjuntos de datos (`linear_data` y` non_linear_data`). Esto significa que no incluimos la columna de la etiqueta. El siguiente código muestra cómo obtener las columnas (x1, x2) y transformarlas en la matriz np.
 
 `data_array = data.as_matrix(['x1', 'x2'])`
 
-For the weights and biases use any values you want, just make sure the vectors have _proper shapes_.
+Para los pesos y sesgos, use los valores que desee, solo asegúrese de que los vectores tengan _formas adecuadas_.
 
-## Task 5
-Finally, you can use the `forward_propagation` function with specific parameters. The last lines of the code are displaying few predictions for both datasets.
+## Tarea 5
+Finalmente, puede usar la función `forward_propagation` con parámetros específicos. Las últimas líneas del código muestran algunas predicciones para ambos conjuntos de datos.
 
-Keep in mind that these predictions are not necessary tuned. We didn't put _any training_ in place. We will do it in one of the next scenarios.
+Tenga en cuenta que no es necesario ajustar estas predicciones. No pusimos _ ningún entrenamiento_ en su lugar. Lo haremos en uno de los próximos escenarios.
 
-Once you're done with the code you can run it using the following command:
+Una vez que haya terminado con el código, puede ejecutarlo usando el siguiente comando:
 
-`python forward_propagation.py`{{execute}}
+`python forward_propagation.py` {{ejecutar}}

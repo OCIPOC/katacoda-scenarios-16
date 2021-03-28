@@ -1,11 +1,10 @@
-We will be classifying the data used in the previous scenarios when we applied Logistic Regression to the task. We will focus here only on the _prediction_ phase, but you'll have the chance to implement the training in the later part of the course.
+Clasificaremos los datos utilizados en los escenarios anteriores cuando aplicamos Regresión logística a la tarea. Nos centraremos aquí solo en la fase de _ predicción_, pero tendrá la oportunidad de implementar la capacitación en la última parte del curso.
 
-Below you can see the visualisation of the datasets, both _linearly separated and not_.
-
+A continuación puede ver la visualización de los conjuntos de datos, tanto _linealmente separados como no_.
 <img src="/basiafusinska/courses/deep-learning-with-tensorflow/forward-propagation/assets/linear.png" alt="Linear dataset">
 
 <img src="/basiafusinska/courses/deep-learning-with-tensorflow/forward-propagation/assets/non_linear.png" alt="Non-linear dataset">
 
-## Task 1
+## Tarea 1
 
-You're going to get the data from the files. The code will be written in the `forward_propagation.py`{{open}}. There are several help functions in the helper.py script. To load data use `read_data` function pointing to both data files: `linear.csv` and `non_linear.csv`.
+Obtendrá los datos de los archivos. El código se escribirá en `forward_propagation.py` {{open}}. Hay varias funciones de ayuda en el script helper.py. Para cargar datos, use la función `read_data` que apunta a ambos archivos de datos:` linear.csv` y `non_linear.csv`.

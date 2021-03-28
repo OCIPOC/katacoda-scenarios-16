@@ -1,5 +1,5 @@
-## Congratulations!
+## ¡Felicidades!
 
-You've completed **Forward Propagation** scenario.
+Has completado el escenario ** Propagación hacia adelante **.
 
-You've built the simple neural network and implemented the Forward Propagation. This is the baseline for creating more complex Deep Learning models.
+Ha construido la red neuronal simple e implementado la propagación hacia adelante. Esta es la línea de base para crear modelos de Deep Learning más complejos.

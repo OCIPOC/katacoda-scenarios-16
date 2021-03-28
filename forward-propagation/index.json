@@ -1,6 +1,6 @@
 {
   "title": "Forward propagation",
-  "description": "Learn how to build simple neural network using numpy",
+  "description": "Aprende cómo contruir una red neuronal simple con numpy",
   "difficulty": "beginner",
   "time": "15 minutes",
   "details": {
