@@ -1,17 +1,17 @@
-Numpy arrays can be indexed and iterated like other Python sequences. Indexing starts with 0.
+Las matrices Numpy se pueden indexar e iterar como otras secuencias de Python. La indexación comienza con 0.
 
 `a = np.array([2, 3, 5, 20, 2, 1, 4, 6, 1, 8, 10, 3])
 a[2:4]`{{execute}}
 
-For multidimensional arrays, you can use indices per axis.
+Para matrices multidimensionales, puede usar índices por eje.
 
 `b = a.reshape(4, 3)
 b
-b[3, 1] # Element in the 4th row and 2nd column
+b[3, 1] # Elemento en la cuarta fila y segunda columna
 b[:, 2] # 3-rd column
 b[1, :] # 2nd row`{{execute}}
 
-For short you can use minus values when accessing an element from the end.
+Para abreviar, puede usar valores negativos al acceder a un elemento desde el final.
 
 `a[-1]
 b[-2, :]

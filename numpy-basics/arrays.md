@@ -1,34 +1,33 @@
-_Numpy_ package is one the most widely used library in the Python environment. It enables straightforwardly [vectorising](https://en.wikipedia.org/wiki/Array_programming) the operations.  In the world of Deep Learning and Neural Networks, this is a desirable quality.
+El paquete _Numpy_ es una de las librerias de Python más utilizadas. Te permite [vectorizar](https://en.wikipedia.org/wiki/Array_programming) las operaciones.  En el mundo del aprendizaje profundo y las redes neuronales, esta es una cualidad deseable.
 
-Numpy's main object is a multidimensional array storing elements of the same type, usually numbers. The arrays (_umpy.array_) created using the library differ from the ones in Python standard library (_array.array_). Let us first run the Python command line and import the package.
+El objeto principal de Numpy es una matriz multidimensional que almacena elementos del mismo tipo, generalmente números. Las matrices (_umpy.array_) creados usando la biblioteca difieren de los de la biblioteca estándar de Python (_array.array_). Primero ejecutemos la línea de comandos de Python e importemos el paquete.
 
 `python`{{execute}}
 
 `import numpy as np`{{execute}}
 
-There are several ways on how to create the arrays. The easiest is to provide the set of value, by passing a regular Python list or tuple using the array function.
+Hay varias formas de crear las matrices. Lo más fácil es proporcionar el conjunto de valores, pasando una lista o tupla de Python normal utilizando la función de matriz.
 
 `np.array([2, 4, 15])
 np.array([[1, 2], [3, 4], [5, 6]])`{{execute}}
 
-The transformations change sequences of sequences into two-dimensional arrays, sequences of sequences of sequences into three-dimensional arrays, and so on. Notice that the following line will return with the error:
+Las transformaciones cambian secuencias de secuencias en matrices bidimensionales, secuencias de secuencias de secuencias en matrices tridimensionales, etc. Tenga en cuenta que la siguiente línea volverá con el error:
 
 `np.array(2, 4, 15)`{{execute}}
 
-To find out about the shape of the array use the following:
+Para conocer la forma de la matriz, utilice lo siguiente:
 
 `a = np.array([[1, 2], [3, 4], [5, 6]])
 a.shape`{{execute}}
 
-To change it, use the reshape function:
-
+Para cambiarlo, use la función reshape:
 `a.reshape(2, 3)`{{execute}}
 
-You may find the functions zeros and ones useful to create arrays containing only 0s or 1s:
+Puede encontrar útiles las funciones ceros y unos para crear matrices que contengan solo 0 o 1:
 
 `np.zeros((3, 4))
 np.ones((2, 3))`{{execute}}
 
-For the randomly generated numbers apply:
+Para los números generados aleatoriamente se aplican:
 
 `np.random.random((2,3))`{{execute}}

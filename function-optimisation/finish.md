@@ -1,8 +1,8 @@
-## Congratulations!
+## ¡Felicidades!
 
-You've completed **Function Optimisation** scenario.
+Ha completado el escenario **Optimización de funciones**.
 
-You've completed the following tasks for both quadratic function and linear model:
-* Defining the loss function
-* Initialising the optimiser
-* Function optimisation
+Ha completado las siguientes tareas tanto para la función cuadrática como para el modelo lineal:
+* Definición de la función de pérdida
+* Inicializando el optimizador
+* Optimización de funciones

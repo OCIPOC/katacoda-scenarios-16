@@ -14,4 +14,4 @@ Tenga en cuenta que no es necesario ajustar estas predicciones. No pusimos _ nin
 
 Una vez que haya terminado con el código, puede ejecutarlo usando el siguiente comando:
 
-`python forward_propagation.py` {{ejecutar}}
+`python forward_propagation.py`{{execute}}

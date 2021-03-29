@@ -7,4 +7,4 @@ A continuación puede ver la visualización de los conjuntos de datos, tanto _li
 
 ## Tarea 1
 
-Obtendrá los datos de los archivos. El código se escribirá en `forward_propagation.py` {{open}}. Hay varias funciones de ayuda en el script helper.py. Para cargar datos, use la función `read_data` que apunta a ambos archivos de datos:` linear.csv` y `non_linear.csv`.
+Obtendrá los datos de los archivos. El código se escribirá en `forward_propagation.py`{{open}}. Hay varias funciones de ayuda en el script helper.py. Para cargar datos, use la función `read_data` que apunta a ambos archivos de datos:` linear.csv` y `non_linear.csv`.

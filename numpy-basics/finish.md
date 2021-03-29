@@ -1,10 +1,10 @@
-## Congratulations!
+## ¡Felicidades!
 
-You've completed **Numpy Basics** scenario.
+Has completado el escenario **Numpy Basics**.
 
-You've learned the following concepts using Python numpy library:
+Ha aprendido los siguientes conceptos usando la biblioteca numpy de Python:
 
-* Creating the array
-* Operations on arrays
-* Applying functions
-* Perform linear algebra operations
+* Creando la matriz
+* Operaciones en matrices
+* Aplicar funciones
+* Realizar operaciones de álgebra lineal

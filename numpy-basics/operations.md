@@ -1,4 +1,4 @@
-Arithmetic operations in the numpy library operate elementwise. They create a new table and fill it with the result values. Let's try it with a scalar:
+Las operaciones aritméticas en la biblioteca numpy operan por elementos. Crean una nueva tabla y la llenan con los valores de resultado. Probémoslo con un escalar:
 
 `a = np.array([1., 2., 3., 4., 5.])
 a + 1
@@ -7,17 +7,16 @@ a / 2
 a * 5
 a**2`{{execute}}
 
-This will also work with many built-in operations:
+Esto también funcionará con muchas operaciones integradas:
 
 `np.sin(a)
 np.exp(a)`{{execute}}
 
-You can also use arrays to create the condition index:
-
+También puede usar matrices para crear el index de condición:
 `a > 3
 a % 2 == 0`{{execute}}
 
-Some operations are working in place, without creating a new array:
+Algunas operaciones funcionan en su lugar, sin crear una nueva matriz:
 
 `a += 10
 a /= 2

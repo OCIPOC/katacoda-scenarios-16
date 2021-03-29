@@ -1,3 +1,3 @@
-Machine Learning problems can most of the times be rephrased as the optimisation problems. The whole point is to define a proper function to be optimised.
+La mayoría de las veces, los problemas de aprendizaje automático pueden reformularse como problemas de optimización. El objetivo es definir una función adecuada para optimizar.
 
-This scenario is walking you through how to perform the optimisation using TensorFlow.
+Este escenario le muestra cómo realizar la optimización con TensorFlow.

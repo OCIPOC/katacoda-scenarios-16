@@ -1,3 +1,3 @@
-This scenario is the introduction to the basic concepts for the _numpy_ library.
+Este escenario es la introducción a los conceptos básicos de la biblioteca _numpy_.
 
-It's not a comprehensive tutorial, but enough to follow the next scenarios in the Deep Learning course.
+No es un tutorial completo, pero es suficiente para seguir los siguientes escenarios en el curso de Deep Learning.

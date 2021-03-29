@@ -1,18 +1,18 @@
-So far we defined how the optimisation process should look like. In TensorFlow this means establishing the computation graph. Now it's time for running it inside of the session.
+Hasta ahora definimos cómo debería ser el proceso de optimización. En TensorFlow, esto significa establecer el gráfico de cálculo. Ahora es el momento de ejecutarlo dentro de la sesión.
 
-We'll create the session and initialise the variables.
+Crearemos la sesión e inicializaremos las variables.
 
 `sess = tf.InteractiveSession()
 sess.run(tf.global_variables_initializer())`{{execute}}
 
-The process will run iteratively.
+El proceso se ejecutará de forma iterativa.
 
 `for i in range(20):
    sess.run(optimiser)
 
 `{{execute}}
 
-After it's done, let's print the result and close the session.
+Una vez hecho esto, imprimamos el resultado y cerremos la sesión.
 
 `print('Minimised value is: {} for the x: {}'.format(sess.run(y), sess.run(x)))
 sess.close()`{{execute}}
