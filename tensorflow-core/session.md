@@ -1,20 +1,20 @@
-To evaluate the computational graph, or any node for that matter, you need to run it within a *session*. The session can be created using the following code:
+Para evaluar el gráfico computacional, o cualquier nodo, debe ejecutarlo dentro de una * sesión *. La sesión se puede crear usando el siguiente código:
 
 `sess = tf.Session()`{{execute}}
 
-Once the session is on, you can use `run` method to get the values. Try doing it for constant inputs:
+Una vez que la sesión está activada, puede usar el método `run` para obtener los valores. Intente hacerlo para entradas constantes:
 
 `print(sess.run([input1, input2]))`{{execute}}
 
-Notice that this time the output is the actual expected number values: 2.0 and 5.0.
+Observe que esta vez la salida son los valores numéricos esperados reales: 2.0 y 5.0.
 
-To finish the graph we need the third node and the `add` method:
+Para terminar el gráfico necesitamos el tercer nodo y el método `add`:
 
 `add_node = tf.add(input1, input2)`{{execute}}
 
-As previously you can see different outputs depending if the node was or wasn't evaluated.
+Como anteriormente, puede ver diferentes salidas dependiendo de si el nodo fue evaluado o no.
 
 `print(add_node)
 print(sess.run(add_node))`{{execute}}
 
-The first line displays the tensor information, second - the result of adding calculation: 7.0.
+La primera línea muestra la información del tensor, la segunda, el resultado de sumar el cálculo: 7.0.

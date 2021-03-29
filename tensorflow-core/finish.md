@@ -1,8 +1,8 @@
-## Congratulations!
+## ¡Felicidades!
 
-You've completed **TensorFlow Core** scenario.
+Completaste el escenario de **TensorFlow Core**.
 
-You've learned how to:
-* Create computational graph
-* Use constants, placeholders and variables
-* Run the session
+Has aprendido a:
+* Crear gráfico computacional
+* Utilice constantes, marcadores de posición y variables
+* Ejecutar la sesión

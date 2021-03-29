@@ -1,13 +1,12 @@
-To start working with Python shell run the following command:
+Para comenzar a trabajar con el shell de Python, ejecute el siguiente comando:
 
 `python`{{execute}}
 
-You can use `quit()` to leave it.
+Pueder usar `quit()` para salir.
 
-To start working TensorFlow you should first import it to give Python access to all its assets:
-
+Para comenzar a trabajar con TensorFlow, primero debe importarlo para darle acceso a Python a todos sus assets:
 `import tensorflow as tf`{{execute}}
 
-Later in a code whenever you want to use TensorFlow classes, methods or symbols you should just refer to `tf` variable.
+Más adelante en un código, siempre que desee usar clases, métodos o símbolos de TensorFlow, debe referirse a la variable `tf`.
 
-The core concept of the library (hence the name) are *tensors*. A tensor is an array of any number of dimensions. This data shape is very convenient for a lot of neural networks computations. We will see the examples later in this and future scenarios.
+El concepto central de la biblioteca (de ahí el nombre) son *tensores*. Un tensor es una matriz de cualquier número de dimensiones. Esta forma de datos es muy conveniente para muchos cálculos de redes neuronales. Veremos los ejemplos más adelante en este y en escenarios futuros.
