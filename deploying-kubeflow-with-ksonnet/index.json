@@ -1,5 +1,5 @@
 {
-  "title": "Deploying Kubeflow",
+  "title": "Deploying Kubeflow with Ksonnet",
   "description": "Learn how to deploy Kubeflow to a Kubernetes cluster",
   "details": {
     "steps": [
@@ -7,7 +7,6 @@
       { "title": "Deploying Kubeflow", "text": "step-deploying-kubeflow.md" },
       { "title": "Example TensorFlow Application", "text": "step-example-tfjob.md" },
       { "title": "Deploy TensorFlow Job (TFJob)", "text": "step-deploying-tfjob.md" },
-      { "title": "View Job Progress and Results", "text": "step-viewing-tfjob.md" },
       { "title": "Deploy JupyterHub", "text": "jupyter.md" },
       { "title": "Access Model Server", "text": "model.md" }
     ],
