@@ -7,8 +7,12 @@
     "details": {
         "steps": [
             {
-                "title" : "Create Cassandra StorageClass",
-                "text": "2.create-vol.md"
+                "title" : "Get Started",
+                "text": "1.Start.md"
+            },
+            {
+                "title" : "Create Table",
+                "text": "2.create-table.md"
             }
             
            
