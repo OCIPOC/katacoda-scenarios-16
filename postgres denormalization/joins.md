@@ -79,3 +79,22 @@ SELECT * FROM sales;
 ```{{execute}}
 
 
+#### Let's say we need to do a query that gives us:
+
+`transaction_id
+ customer_name
+ cashier name
+ year 
+ albums sold
+ amount sold` 
+
+we will need to perform a 3 way `JOIN` on the 4 tables we have created. 
+
+```
+SELECT transactions2.transaction_id, customer_name, employees.employee_name, \
+                        year, albums_sold.album_name, sales.amount_spent\
+                  FROM ((transactions2 JOIN employees ON \
+                         transactions2.cashier_id = employees.employee_id) JOIN \
+                         albums_sold ON albums_sold.transaction_id=transactions2.transaction_id) JOIN\
+                         sales ON transactions2.transaction_id=sales.transaction_id;"
+```{{execute}}
