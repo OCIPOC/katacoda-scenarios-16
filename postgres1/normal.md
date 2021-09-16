@@ -26,7 +26,7 @@ INSERT INTO transactions(transaction_id, customer_name, cashier_name, year) VALU
 ```{{execute}}
 
 ``` {.sql}
-INSERT INTO albums_sold(album_id, transaction_id, album_name) VALUES (1, 1, "Rubber Soul"), (2, 1, "Let it Be"), (3, 2, "My Generation"), (4, 3, "Meet the Beatles"), (5, 3, "Help!"), ();
+INSERT INTO albums_sold(album_id, transaction_id, album_name) VALUES (1, 1, "Rubber Soul"), (2, 1, "Let it Be"), (3, 2, "My Generation"), (4, 3, "Meet the Beatles"), (5, 3, "Help!");
 ```{{execute}}
 
 ``` {.sql}
