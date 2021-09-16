@@ -1,21 +1,13 @@
 We Create Table Statement and insert the data in the table
 =============
 
-
-Spatial joins are the bread-and-butter of spatial databases. They allow you to combine information from different tables by using spatial relationships as the join key. Much of what we think of as "standard GIS analysis" can be expressed as spatial joins.
-
-In the previous section, we explored spatial relationships using a two-step process: first we extracted a subway station point for 'Broad St'; then, we used that point to ask further questions such as "what neighborhood is the 'Broad St' station in?"
-
-Using a spatial join, we can answer the question in one step, retrieving information about the subway station and the neighborhood that contains it:
-
 ``` {.sql}
 CREATE TABLE IF NOT EXISTS music_store (transaction_id int, 
 customer_name varchar, cashier_name varchar, year int, albums_purchased text[]);
 ```{{execute}}
 ``` {.sql}
 INSERT INTO music_store (transaction_id, customer_name, cashier_name, year, albums_purchased) 
-                 VALUES 
-                 (1, "Amanda", "Sam", 2000, '{"Rubber Soul", "Let it Be"}');
+                 VALUES (1, 'Amanda', 'Sam', 2000, '{"Rubber Soul", "Let it Be"}'), (2, 'Toby', 'Sam', 2000, '{"My Generation"}'), (3, 'Max", 'Bob', 2018, '{"Meet the Beatles", "Help!"}');
 ```{{execute}}
 
 
