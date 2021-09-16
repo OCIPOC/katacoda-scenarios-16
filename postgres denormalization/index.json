@@ -1,5 +1,5 @@
 {
-    "title": "Postgres Intro",
+    "title": "Postgres Denormalization",
     "description": "Creating Denormalized Tables",
     "difficulty": "intermediate",
     "time": "10 minutes",
