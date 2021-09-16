@@ -22,15 +22,15 @@ CREATE TABLE IF NOT EXISTS albums_sold (album_id int, transaction_id int,
 ```{{execute}}
 
 ``` {.sql}
-INSERT INTO transactions(transaction_id, customer_name, cashier_name, year) VALUES (1, "Amanda", "Sam", 2000), (1, "Amanda", "Sam", 2000), (2, "Toby", "Sam", 2000), (3, "Max", "Bob", 2018);
+INSERT INTO transactions(transaction_id, customer_name, cashier_name, year) VALUES (1, 'Amanda', 'Sam', 2000), (1, 'Amanda', 'Sam', 2000), (2, 'Toby', 'Sam', 2000), (3, 'Max', 'Bob', 2018);
 ```{{execute}}
 
 ``` {.sql}
-INSERT INTO albums_sold(album_id, transaction_id, album_name) VALUES (1, 1, "Rubber Soul"), (2, 1, "Let it Be"), (3, 2, "My Generation"), (4, 3, "Meet the Beatles"), (5, 3, "Help!");
+INSERT INTO albums_sold(album_id, transaction_id, album_name) VALUES (1, 1, 'Rubber Soul'), (2, 1, 'Let it Be'), (3, 2, 'My Generation'), (4, 3, 'Meet the Beatles'), (5, 3, 'Help!');
 ```{{execute}}
 
 ``` {.sql}
-INSERT INTO transactions(transaction_id, customer_name, cashier_name, year) VALUES (1, "Amanda", "Sam", 2000), (2, 'Toby', 'Sam', '2000', '{"My Generation"}'), (3, 'Max', 'Bob', 2018, '{"Meet the Beatles", "Help!"}');
+INSERT INTO transactions(transaction_id, customer_name, cashier_name, year) VALUES (1, 'Amanda', 'Sam', 2000), (2, 'Toby', 'Sam', '2000', '{"My Generation"}'), (3, 'Max', 'Bob', 2018, '{"Meet the Beatles", "Help!"}');
 ```{{execute}}
 
 
