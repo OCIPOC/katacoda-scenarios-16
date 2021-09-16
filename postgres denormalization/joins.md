@@ -1,4 +1,4 @@
-#### Let's start with our normalized (3NF) database set of tables we had in the last exercise but we have added a new table `sales`. 
+Let's start with our normalized (3NF) database set of tables we had in the last exercise but we have added a new table `sales`. 
 
 `Table Name: transactions2 
 column 0: transaction Id
@@ -47,12 +47,11 @@ CREATE TABLE IF NOT EXISTS sales (transaction_id int, amount_spent int);
 ```
 INSERT INTO transactions2 (transaction_id, customer_name, cashier_id, year) 
                  VALUES 
-                 (1, "Amanda", 1, 2000), (2, "Toby", 1, 2000), (3, "Max", 2, 2018);
+                 (1, 'Amanda', 1, 2000), (2, 'Toby', 1, 2000), (3, 'Max', 2, 2018);
 ```{{execute}}
 ```
 INSERT INTO albums_sold (album_id, transaction_id, album_name) 
-                 VALUES 
-                 (1, 1, "Rubber Soul"), (2, 1, "Let It Be"), (3, 2, "My Generation"), (4, 3, "Meet the Beatles"), (5, 3, "Help!");
+                 VALUES (1, 1, 'Rubber Soul'), (2, 1, 'Let It Be'), (3, 2, 'My Generation'), (4, 3, 'Meet the Beatles'), (5, 3, 'Help!');
 ```{{execute}}
 ```
 INSERT INTO sales (transaction_id, amount_spent) 
@@ -62,39 +61,15 @@ INSERT INTO sales (transaction_id, amount_spent)
 
 ### Confirm the tables were created with the data
 ```
-echo 'Table: transactions2'
 SELECT * FROM transactions2;
 ```{{execute}}
 ```
-echo 'Table: albums_sold'
 SELECT * FROM albums_sold;
 ```{{execute}}
 ```
-echo 'Table: employees'
 SELECT * FROM employees;
 ```{{execute}}
 ```
-echo '\nTable: Sales\n'
 SELECT * FROM sales;
 ```{{execute}}
 
-
-#### Let's say we need to do a query that gives us:
-
-`transaction_id
- customer_name
- cashier name
- year 
- albums sold
- amount sold` 
-
-we will need to perform a 3 way `JOIN` on the 4 tables we have created. 
-
-```
-SELECT transactions2.transaction_id, customer_name, employees.employee_name, \
-                        year, albums_sold.album_name, sales.amount_spent\
-                  FROM ((transactions2 JOIN employees ON \
-                         transactions2.cashier_id = employees.employee_id) JOIN \
-                         albums_sold ON albums_sold.transaction_id=transactions2.transaction_id) JOIN\
-                         sales ON transactions2.transaction_id=sales.transaction_id;"
-```{{execute}}
