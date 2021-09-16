@@ -23,9 +23,7 @@ column 1: Amount Spent
 ### We add CREATE statements for all tables and INSERT data into the tables
 
 ```
-CREATE TABLE IF NOT EXISTS transactions2 (transaction_id int, 
-                                                           customer_name varchar, cashier_id int, 
-                                                           year int);
+CREATE TABLE IF NOT EXISTS transactions2 (transaction_id int, customer_name varchar, cashier_id int, year int);
 ```{{execute}}
 
 ```
@@ -53,6 +51,11 @@ INSERT INTO transactions2 (transaction_id, customer_name, cashier_id, year)
 INSERT INTO albums_sold (album_id, transaction_id, album_name) 
                  VALUES (1, 1, 'Rubber Soul'), (2, 1, 'Let It Be'), (3, 2, 'My Generation'), (4, 3, 'Meet the Beatles'), (5, 3, 'Help!');
 ```{{execute}}
+```
+INSERT INTO employees (employee_id, employee_name) 
+                 VALUES (1, "Sam"), (2, "Bob");
+```{{execute}}
+
 ```
 INSERT INTO sales (transaction_id, amount_spent) 
                  VALUES 
