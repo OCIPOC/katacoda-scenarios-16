@@ -7,7 +7,8 @@
       "steps": [
         {"title": "Create Table", "text": "joins.md"},
         {"title": "Normal Form", "text":"normal.md"},
-        {"title": "3d", "text":"3d.md"}
+        {"title": "3d", "text":"3d.md"},
+        {"title": "Drop", "text": "drop.md"}
       ],
       "intro": {
         "courseData": "env-init.sh",
