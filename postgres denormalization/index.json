@@ -1,0 +1,36 @@
+{
+    "title": "Postgres Intro",
+    "description": "Creating Denormalized Tables",
+    "difficulty": "intermediate",
+    "time": "10 minutes",
+    "details": {
+      "steps": [
+        {"title": "Create Statements", "text": "joins.md"},
+        {"title": "Normal Form", "text":"normal.md"},
+        {"title": "3d", "text":"3d.md"},
+        {"title": "Drop", "text": "drop.md"}
+      ],
+      "intro": {
+        "courseData": "env-init.sh",
+        "code": "set-env.sh",
+        "text": "intro.md",
+        "credits": ""
+      },
+      "finish": {
+        "text": "finish.md"
+      },
+      "assets": {
+        "client": []
+      }
+    },
+    "environment": {
+      "uilayout": "terminal",
+      "uimessage1": "\u001b[32mYour Interactive Bash Terminal\u001b[m\r\n",
+      "terminals": [
+        {"name": "Terminal 2", "target": "host01"}
+      ]
+    },
+    "backend": {
+      "imageid": "crunchydata-single1"
+    }
+  }
