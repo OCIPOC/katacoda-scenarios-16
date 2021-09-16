@@ -47,8 +47,35 @@ CREATE TABLE IF NOT EXISTS sales (transaction_id int, amount_spent int);
 ```
 INSERT INTO transactions2 (transaction_id, customer_name, cashier_id, year) 
                  VALUES 
-                 (1, "Amanda", 1, 2000);
+                 (1, "Amanda", 1, 2000), (2, "Toby", 1, 2000), (3, "Max", 2, 2018), ();
+```{{execute}}
+```
+INSERT INTO albums_sold (album_id, transaction_id, album_name) 
+                 VALUES 
+                 (1, 1, "Rubber Soul"), (2, 1, "Let It Be"), (3, 2, "My Generation"), (4, 3, "Meet the Beatles"), (5, 3, "Help!");
+```{{execute}}
+```
+INSERT INTO sales (transaction_id, amount_spent) 
+                 VALUES 
+                 (1, 40), (2, 19), (3, 45);
 ```{{execute}}
 
+### Confirm the tables were created with the data
+```
+echo 'Table: transactions2'
+SELECT * FROM transactions2;
+```{{execute}}
+```
+echo 'Table: albums_sold'
+SELECT * FROM albums_sold;
+```{{execute}}
+```
+echo 'Table: employees'
+SELECT * FROM employees;
+```{{execute}}
+```
+echo '\nTable: Sales\n'
+SELECT * FROM sales;
+```{{execute}}
 
 
