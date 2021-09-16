@@ -53,7 +53,7 @@ INSERT INTO albums_sold (album_id, transaction_id, album_name)
 ```{{execute}}
 ```
 INSERT INTO employees (employee_id, employee_name) 
-                 VALUES (1, "Sam"), (2, "Bob");
+                 VALUES (1, 'Sam'), (2, 'Bob');
 ```{{execute}}
 
 ```
