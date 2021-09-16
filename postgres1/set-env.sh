@@ -11,8 +11,8 @@ until PGPASSWORD="password" psql -h localhost -U groot postgres -c '\l' &> /dev/
   sleep 1
 done
 
-echo 'Loading data...'
-curl http://s3.cleverelephant.ca/nyc_data.sql.gz | gzip -dc | PGPASSWORD="password" psql -h localhost -U groot nyc
+echo 'Set environment...'
+curl PGPASSWORD="password" psql -h localhost -U groot nyc
 
 echo 'Finished and ready to go.'
 clear
