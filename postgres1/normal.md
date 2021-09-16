@@ -30,7 +30,7 @@ INSERT INTO albums_sold(album_id, transaction_id, album_name) VALUES (1, 1, 'Rub
 ```{{execute}}
 
 ``` {.sql}
-INSERT INTO transactions(transaction_id, customer_name, cashier_name, year) VALUES (1, 'Amanda', 'Sam', 2000), (2, 'Toby', 'Sam', '2000', '{"My Generation"}'), (3, 'Max', 'Bob', 2018, '{"Meet the Beatles", "Help!"}');
+INSERT INTO transactions(transaction_id, customer_name, cashier_name, year) VALUES (1, 'Amanda', 'Sam', 2000), (2, 'Toby', 'Sam', '2000'), (3, 'Max', 'Bob', 2018);
 ```{{execute}}
 
 
