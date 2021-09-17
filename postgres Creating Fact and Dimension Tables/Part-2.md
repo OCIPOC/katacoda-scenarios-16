@@ -1,7 +1,7 @@
-### Now run the following queries on this data that utilize the Fact/Dimension and Star Schema¶
+Now run the following queries on this data that utilize the Fact/Dimension and Star Schema¶
 
-#### Query 1: Find all the customers that spent more than 30 dollars, who are they, which store they bought it from, location of the store, what they bought and if they are a rewards member.
-#### Query 2: How much did Customer 2 spend
+Query 1: Find all the customers that spent more than 30 dollars, who are they, which store they bought it from, location of the store, what they bought and if they are a rewards member.
+Query 2: How much did Customer 2 spend
 
 Query 1: Find all the customers that spent more than 30 dollars, who are they, which store they bought it from, location of the store, what they bought and if they are a rewards member
 
