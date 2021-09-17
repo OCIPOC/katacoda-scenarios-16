@@ -24,7 +24,7 @@ column 3: Year
 column 4: amount_spent`
 
 ```
-CREATE TABLE IF NOT EXISTS transactions (transaction_id int, customer_name varchar, cashier_id int,  year int, amount_spent int);'
+CREATE TABLE IF NOT EXISTS transactions (transaction_id int, customer_name varchar, cashier_id int,  year int, amount_spent int);
 ```{{execute}}
 
 ``` {.sql}
