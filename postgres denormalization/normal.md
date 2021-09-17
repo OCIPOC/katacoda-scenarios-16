@@ -24,14 +24,13 @@ column 3: Year
 column 4: amount_spent`
 
 ```
-CREATE TABLE IF NOT EXISTS transactions (transaction_id int, 
-                                                           customer_name varchar, cashier_id int, 
-                                                           year int, amount_spent int);'
+CREATE TABLE IF NOT EXISTS transactions (transaction_id int, customer_name varchar, cashier_id int,  year int, amount_spent int);'
 ```{{execute}}
 
 ``` {.sql}
-INSERT INTO transactions(transaction_id, customer_name, cashier_id, year, amount_spent) VALUES (1, 'Amanda', 1, 2000, 40), (2, 'Toby', 1, 2000, 19), (3, 'Max', 2, 2018, 45);
+INSERT INTO transactions (transaction_id, customer_name, cashier_id, year, amount_spent) VALUES (1, 'Amanda', 1, 2000, 40), (2, 'Toby', 1, 2000, 19), (3, 'Max', 2, 2018, 45);
 ```{{execute}}
+
 
 Great we can now do a simplifed query to get the information we need. No  `JOIN` is needed.
 ``` {.sql}
