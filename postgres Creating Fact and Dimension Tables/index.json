@@ -1,0 +1,35 @@
+{
+    "title": "Postgres Creating Fact and Dimension",
+    "description": "Creating Fact and Dimension Tables with Star Schema",
+    "difficulty": "intermediate",
+    "time": "10 minutes",
+    "details": {
+      "steps": [
+        {"title": "Create Tables", "text": "Part-1.md"},
+        {"title": "Queries", "text":"Part-2.md"},
+        {"title": "Drop", "text":"Part-3.md"}
+      ],
+      "intro": {
+        "courseData": "env-init.sh",
+        "code": "set-env.sh",
+        "text": "intro.md",
+        "credits": ""
+      },
+      "finish": {
+        "text": "finish.md"
+      },
+      "assets": {
+        "client": []
+      }
+    },
+    "environment": {
+      "uilayout": "terminal",
+      "uimessage1": "\u001b[32mYour Interactive Bash Terminal\u001b[m\r\n",
+      "terminals": [
+        {"name": "Terminal 2", "target": "host01"}
+      ]
+    },
+    "backend": {
+      "imageid": "crunchydata-single1"
+    }
+  }

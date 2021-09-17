@@ -1,4 +1,4 @@
-### For the sake of the demo, Iet's drop the tables. 
+For the sake of the demo, Iet's drop the tables. 
 
 ```
 DROP table albums_sold;
