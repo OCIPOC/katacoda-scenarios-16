@@ -17,7 +17,7 @@ SELECT name, store.store_id, store.state, item_name, customer.rewards \
 ```{{execute}}
 
 
-Query 2: How much did Customer 2 spend?¶
+Query 2: How much did Customer 2 spend?
 ```
 SELECT customer_id, SUM(spent) FROM customer_transactions WHERE customer_id = 2 GROUP BY customer_id;
 ```{{execute}}
