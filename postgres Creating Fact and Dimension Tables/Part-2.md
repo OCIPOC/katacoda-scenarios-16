@@ -23,3 +23,4 @@ SELECT customer_id, SUM(spent) FROM customer_transactions WHERE customer_id = 2 
 ```{{execute}}
 
 
+Summary: You can see here from this elegant schema that we were: 1) able to get "facts/metrics" from our fact table (how much each store sold), and 2) information about our customers that will allow us to do more indepth analytics to get answers to business questions by utilizing our fact and dimension tables.
