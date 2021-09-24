@@ -3,4 +3,9 @@
 
 ### 2.1 How much? What data sizes are we looking at?
 
+```
+docker exec -it postgres psql -U postgres
+\c bootcampai
+```{{execute}}
+
 

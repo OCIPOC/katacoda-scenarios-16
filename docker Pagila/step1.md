@@ -37,7 +37,7 @@ docker exec -it postgres psql -U postgres
 psql (13.1 (Debian 13.1-1.pgdg100+1))
 Type "help" for help.
 
-postgres=# CREATE DATABASE pagila;
+postgres=# CREATE DATABASE bootcampai;
 postgres-# CREATE DATABASE
 postgres=\q
 ```
@@ -45,14 +45,14 @@ postgres=\q
 
 
 ```
-CREATE DATABASE pagila;
+CREATE DATABASE bootcampai;
 \q
 ```{{execute}}
 
 
 Insert data
 ```
-cat pagila-schema.sql | docker exec -i postgres psql -U postgres -d pagila
-cat pagila-data.sql | docker exec -i postgres psql -U postgres -d pagila
+cat pagila-schema.sql | docker exec -i postgres psql -U postgres -d bootcampai
+cat pagila-data.sql | docker exec -i postgres psql -U postgres -d bootcampai
 ```{{execute}}
 
