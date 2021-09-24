@@ -31,6 +31,7 @@ docker run --name postgres -e POSTGRES_PASSWORD=secret -d postgres
 docker exec -it postgres psql -U postgres
 ```{{execute}}
 
+# Create table and insert data
 
 ```
 psql (13.1 (Debian 13.1-1.pgdg100+1))
@@ -42,14 +43,12 @@ postgres=\q
 ```
 
 
+
 ```
 CREATE DATABASE pagila;
+\q
 ```{{execute}}
 
-
-```
- \q
-```{{execute}}
 
 Insert data
 ```
