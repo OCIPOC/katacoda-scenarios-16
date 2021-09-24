@@ -10,7 +10,23 @@
          {
              "title": "Explore the 3NF Schema",
              "text": "step2.md"
-         }
+         },
+         {
+             "title": "Perform some simple data analysis",
+             "text": "step3.md"
+         },
+         {
+             "title": "Creating Facts & Dimensions",
+             "text": "step4.md"
+         },
+         {
+             "title": "ETL the data from 3NF tables to Facts & Dimension Tables",
+             "text": "step5.md"
+         },
+         {
+             "title": "Repeat the computation from the facts & dimension table",
+             "text": "step6.md"
+         },
     ]
 
     },
