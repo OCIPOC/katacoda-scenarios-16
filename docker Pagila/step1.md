@@ -16,7 +16,6 @@ unzip pagila.zip
 # Initialize Postgres
 
 1. On terminal pull the latest postgres image:
-
 ```
 docker pull postgres
 ```{{execute}}
