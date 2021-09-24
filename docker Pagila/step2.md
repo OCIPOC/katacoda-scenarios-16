@@ -26,7 +26,7 @@ select min(payment_date) as start, max(payment_date) as end from payment;
 ```{{execute}}
 
 2.3 Where? Where do events in this database occur?
-TODO: Write a query that displays the number of addresses by district in the address table. Limit the table to the top 10 districts. Your results should match the table below.
+###### TODO: Write a query that displays the number of addresses by district in the address table. Limit the table to the top 10 districts. Your results should match the table below.
 
 ```
 select district, sum(city_id) as n #write code here;

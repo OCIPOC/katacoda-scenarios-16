@@ -9,8 +9,8 @@ SELECT DISTINCT(TO_CHAR(payment_date :: DATE, 'yyyyMMDD')::integer) AS date_key,
        EXTRACT(week FROM payment_date)                              AS week,
        CASE WHEN EXTRACT(ISODOW FROM payment_date) IN (6, 7) THEN true ELSE false END AS is_weekend
 FROM payment;
-
-
+```{{execute}}
+```
 INSERT INTO dimCustomer (customer_key, customer_id, first_name, last_name, email, address, address2, district, city, country, postal_code, phone, active, create_date, start_date, end_date)
 SELECT c.customer_id AS customer_key,
        c.customer_id,
@@ -32,7 +32,8 @@ FROM customer c
 JOIN address a  ON (c.address_id = a.address_id)
 JOIN city ci    ON (a.city_id = ci.city_id)
 JOIN country co ON (ci.country_id = co.country_id);
-
+```{{execute}}
+```
 INSERT INTO dimMovie (movie_key, film_id, title, description, release_year, language, original_language, rental_duration, length, rating, special_features)
 SELECT f.film_id      AS movie_key,
        f.film_id,
@@ -48,7 +49,8 @@ SELECT f.film_id      AS movie_key,
 FROM film f
 JOIN language l              ON (f.language_id=l.language_id)
 LEFT JOIN language orig_lang ON (f.original_language_id = orig_lang.language_id);
-
+```{{execute}}
+```
 INSERT INTO dimStore (store_key, store_id, address, address2, district, city, country, postal_code, manager_first_name, manager_last_name, start_date, end_date)
 SELECT s.store_id    AS store_key,
        s.store_id,
@@ -67,7 +69,8 @@ JOIN staff st   ON (s.manager_staff_id = st.staff_id)
 JOIN address a  ON (s.address_id = a.address_id)
 JOIN city c     ON (a.city_id = c.city_id)
 JOIN country co ON (c.country_id = co.country_id);
-
+```{{execute}}
+```
 INSERT INTO factSales (date_key, customer_key, movie_key, store_key, sales_amount)
 SELECT TO_CHAR(p.payment_date :: DATE, 'yyyyMMDD')::integer AS date_key ,
        p.customer_id                                        AS customer_key,

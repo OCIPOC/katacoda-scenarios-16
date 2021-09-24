@@ -12,7 +12,8 @@ CREATE TABLE dimDate
   week smallint NOT NULL,
   is_weekend boolean
 );
-
+```{{execute}}
+```
 CREATE TABLE dimCustomer
 (
   customer_key SERIAL PRIMARY KEY,
@@ -32,7 +33,8 @@ CREATE TABLE dimCustomer
   start_date   date NOT NULL,
   end_date     date NOT NULL
 );
-
+```{{execute}}
+```
 CREATE TABLE dimMovie
 (
   movie_key          SERIAL PRIMARY KEY,
@@ -47,6 +49,8 @@ CREATE TABLE dimMovie
   rating             varchar(5) NOT NULL,
   special_features   varchar(60) NOT NULL
 );
+```{{execute}}
+```
 CREATE TABLE dimStore
 (
   store_key           SERIAL PRIMARY KEY,
@@ -62,6 +66,8 @@ CREATE TABLE dimStore
   start_date          date NOT NULL,
   end_date            date NOT NULL
 );
+```{{execute}}
+```
 CREATE TABLE factSales
 (
   sales_key        SERIAL PRIMARY KEY,
