@@ -1,16 +1,28 @@
 {
-    "title": "Sakila Star Schema & ETL",
+    "title": "OLAP Cubes - Slicing and Dicing",
     "description": "All the database tables in this demo are based on public database samples and transformations",
     
     "details":{
         "steps":[{
-            "title": "Connect to the database where Pagila is loaded",
+            "title": "Connect to the local database where Pagila is loaded",
 			"text": "step1.md"
         },
          {
-             "title": "Explore the 3NF Schema",
+             "title": "Slicing and Dicing",
              "text": "step2.md"
-         }
+         },
+         {
+            "title": "Roll up and Drill Down",
+            "text": "step3.md"
+        },
+        {
+            "title": "Grouping Sets",
+            "text": "step4.md"
+        },
+        {
+            "title": "CUBE",
+            "text": "step5.md"
+        }
     ]
 
     },
