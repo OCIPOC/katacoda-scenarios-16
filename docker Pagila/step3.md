@@ -12,17 +12,17 @@
 3.1.1 Films
 ```
 select film_id, title, release_year, rental_rate, rating  from film limit 5;
-```{execute}
+```{execute}}
 
 3.1.2 Payments
 ```
 select * from payment limit 5;
-```{execute}
+```{execute}}
 
 3.1.3 Inventory
 ```
 select * from payment limit 5;
-```{execute}
+```{execute}}
 
 3.1.4 Get the movie of every payment¶
 ```
@@ -32,7 +32,7 @@ JOIN rental r    ON ( p.rental_id = r.rental_id )
 JOIN inventory i ON ( r.inventory_id = i.inventory_id )
 JOIN film f ON ( i.film_id = f.film_id)
 limit 5;
-```{execute}
+```{execute}}
 
 3.1.5 sum movie rental revenue
 ```
