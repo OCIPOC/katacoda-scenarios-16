@@ -15,7 +15,7 @@
 
     },
     "backend": {
-        "imageid": "ubuntu:18.04"
+        "imageid": "ubuntu:1804"
     }
 
 
