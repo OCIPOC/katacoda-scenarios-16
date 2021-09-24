@@ -24,7 +24,7 @@ select * from payment limit 5;
 select * from payment limit 5;
 ```{{execute}}
 
-3.1.4 Get the movie of every payment¶
+3.1.4 Get the movie of every payment 
 ```
 SELECT f.title, p.amount, p.payment_date, p.customer_id                                            
 FROM payment p
@@ -46,13 +46,13 @@ ORDER BY revenue desc
 limit 10;
 ```{{execute}}
 
-3.2 Insight 2: Top grossing cities¶ 
+3.2 Insight 2: Top grossing cities  
     Payments amounts are in table payment
     Cities are in table cities
     payment → customer → address → city
 
 
-3.2.1 Get the city of each payment¶
+3.2.1 Get the city of each payment 
 ```
 SELECT p.customer_id, p.rental_id, p.amount, ci.city                            
 FROM payment p
@@ -88,7 +88,7 @@ order by revenue desc
 limit 10;
 ```{{execute}}
 
-3.3.2 Each movie by customer city and by month (data cube)¶
+3.3.2 Each movie by customer city and by month (data cube) 
 ```
 SELECT f.title, p.amount, p.customer_id, ci.city, p.payment_date,EXTRACT(month FROM p.payment_date) as month
 FROM payment p
@@ -103,7 +103,7 @@ limit 10;
 ```{{execute}}
 
 
-3.3.3 Sum of revenue of each movie by customer city and by month¶
+3.3.3 Sum of revenue of each movie by customer city and by month 
 ```
 SELECT f.title, ci.city,EXTRACT(month FROM p.payment_date) as month, sum(p.amount) as revenue
 FROM payment p
