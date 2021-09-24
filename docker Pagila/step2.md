@@ -29,10 +29,10 @@ select min(payment_date) as start, max(payment_date) as end from payment;
 TODO: Write a query that displays the number of addresses by district in the address table. Limit the table to the top 10 districts. Your results should match the table below.
 
 ```
-select district, sum(city_id) as n #write code here
-from address #write code here
-group by district
-order by n desc
+select district, sum(city_id) as n #write code here;
+from address #write code here;
+group by district;
+order by n desc;
 limit 10;
 ```{{execute}}
 
