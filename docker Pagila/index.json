@@ -4,7 +4,7 @@
     
     "details":{
         "steps":[{
-            "title": "Connect to the local database where Pagila is loaded",
+            "title": "Connect to the database where Pagila is loaded",
 			"text": "step1.md"
         },
          {
