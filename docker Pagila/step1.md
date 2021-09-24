@@ -12,11 +12,6 @@ wget https://bootcampaiaws.s3.amazonaws.com/pagila.zip
 unzip pagila.zip
 ```{{execute}}
 
-Insert data
-```
-cat pagila-schema.sql | docker exec -i postgres psql -U postgres -d pagila
-cat pagila-data.sql | docker exec -i postgres psql -U postgres -d pagila
-```{{execute}}
 
 # Initialize Postgres
 
@@ -53,8 +48,12 @@ CREATE DATABASE pagila;
 
 
 ```
- \c pagila
- \dt
+ \q
 ```{{execute}}
 
+Insert data
+```
+cat pagila-schema.sql | docker exec -i postgres psql -U postgres -d pagila
+cat pagila-data.sql | docker exec -i postgres psql -U postgres -d pagila
+```{{execute}}
 
