@@ -1,0 +1,126 @@
+{
+  "title": "Azure Cloud & Functions",
+  "description": "Introduction to Azure Cloud & Functions",
+  "courses": [
+    {
+      "course_id": "azure-install-cli",
+      "title": "Install Azure CLI on Linux",
+      "description": "Introduction to Azure Cloud"
+    },
+    {
+      "course_id": "azure-cli-authentication",
+      "title": "Azure CLI Authentication",
+      "description": "Introduction to Azure Cloud"
+    },
+	  {
+      "course_id": "azure-cloud-shell-powershell",
+      "title": "PowerShell in Azure Cloud Shell",
+      "description": ""
+    },
+	  {
+      "course_id": "azure-cloud-shell-bash",
+      "title": "Bash in Azure Cloud Shell",
+      "description": "Introduction to Azure Cloud"
+    },
+    {
+      "course_id": "persist-files-azure-shell",
+      "title": "Persist files in Azure Cloud Shell",
+      "description": "Introduction to Azure Cloud"
+    },
+    {
+      "course_id": "azure-functions-azure-cli",
+      "title": "Create function from command line",
+      "description": ""
+    },
+    {
+      "course_id": "azure-functions-java",
+      "title": "Java to create and publish a function to Azure Functions",
+      "description": ""
+    },
+	{
+      "course_id": "azure-functions-java-developer-guide",
+      "title": "Azure Functions Java developer guide",
+      "description": ""
+    },
+    {
+      "course_id": "azure-functions-python",
+      "title": "Create an HTTP triggered python function",
+      "description": ""
+    },
+    {
+      "course_id": "azure-functions-python-tensorflow",
+      "title": "Apply machine learning models in Azure Functions with Python and TensorFlow",
+      "description": ""
+    },
+    {
+      "course_id": "azure-functions-powershell",
+      "title": "Create an HTTP triggered powershell function",
+      "description": ""
+    },
+	{
+      "course_id": "azure-functions-linux",
+      "title": "Create function hosted on Linux using Core Tools and the Azure CLI",
+      "description": ""
+  },
+  	{
+      "course_id": "azure-functions-serverless-api",
+      "title": "Customize an HTTP endpoint in Azure Functions",
+      "description": ""
+  },
+  {
+    "course_id": "azure-functions-docker",
+    "title": "Create a function on Linux using a custom image",
+    "description": ""
+  },
+  {
+    "course_id": "azure-functions-virtual-network",
+    "title": "Integrate Functions with an Azure virtual network",
+    "description": ""
+  },
+	{
+      "course_id": "azure-functions-disable",
+      "title": "Disable functions in Azure Functions",
+      "description": ""
+    },
+	{
+      "course_id": "azure-functions-runtime",
+      "title": "Azure Functions runtime versions",
+      "description": ""
+    },
+    {
+      "course_id": "azure-functions-zip-deployment",
+      "title": "Zip deployment for Azure Functions",
+      "description": ""
+    },
+	{
+      "course_id": "azure-functions-manage",
+      "title": "Manage your function app",
+      "description": ""
+    },
+	{
+      "course_id": "azure-functions-monitoring",
+      "title": "Monitor Azure Functions",
+      "description": ""
+    },
+	{
+      "course_id": "azure-functions-trigger-cosmosdb",
+      "title": "Create a function triggered by Azure Cosmos DB",
+      "description": ""
+    },
+	{
+      "course_id": "azure-functions-trigger-blob",
+      "title": "Create a function triggered by Azure Blob storage",
+      "description": ""
+    },
+	{
+      "course_id": "azure-functions-trigger-queue",
+      "title": "Create a function triggered by Azure Queue storage",
+      "description": ""
+    },
+	{
+      "course_id": "azure-functions-trigger-timer",
+      "title": "Create a timer based function in Azure",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "title": "Apache Kafka Quick Start",
+  "description": "Introduction to Apache Kafka",
+  "courses": [
+    {
+      "course_id": "apache-kafka-installation",
+      "title": "Apache Kafka Installation",
+      "description": ""
+    },
+    {
+      "course_id": "apache-kafka-producer-consumer",
+      "title": "Apache Kafka Producer and Consumer",
+      "description": ""
+    },
+    {
+      "course_id": "apache-kafka-message-validation",
+      "title": "Apache Kafka Message Validation",
+      "description": ""
+    },
+    {
+      "course_id": "apache-kafka-message-enrichment",
+      "title": "Apache Kafka Message Enrichment",
+      "description": ""
+    },
+    {
+      "course_id": "apache-kafka-serialization",
+      "title": "Apache Kafka Serialization",
+      "description": ""
+    },
+    {
+      "course_id": "apache-kafka-schema-registry",
+      "title": "Apache Kafka Schema Registry",
+      "description": ""
+    },
+    {
+      "course_id": "apache-kafka-streams",
+      "title": "Apache Kafka Streams",
+      "description": ""
+    },
+    {
+      "course_id": "apache-kafka-connect",
+      "title": "Apache Kafka Connect",
+      "description": ""
+    }
+  ]
+}

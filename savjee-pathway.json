@@ -1,0 +1,16 @@
+{
+  "title": "Savjee",
+  "description": "Introduction to Savjee",
+  "courses": [
+    {
+      "course_id": "savjeecoin",
+      "title": "SavjeeCoin",
+      "description": "A simple blockchain in Javascript"
+    },
+    {
+      "course_id": "savjeecoin-frontend",
+      "title": "SavjeeCoin Frontend",
+      "description": "Angular app to visualize & interact with a blockchain"
+    }
+  ]
+}
