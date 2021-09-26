@@ -1,0 +1,52 @@
+{
+  "title": "Apache Spark WebUI",
+  "description": "Introduction to Apache Spark",
+  "difficulty": "Advanced",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Prerequisites",
+      "text": "steps/1/text.md"
+    },
+    {
+      "title": "Task: Spark Web Interface",
+      "text": "steps/3/text.md"
+    },    
+	{
+      "title": "Spark Web Interface",
+      "text": "steps/2/text.md"
+    },
+	{
+      "title": "",
+      "text": "steps/4/text.md"
+    },
+  {
+      "title": "Run Job",
+      "text": "steps/5/text.md"
+    },
+    {
+        "title": "DAG Visualization",
+        "text": "steps/6/text.md"
+    },
+    {
+        "title": "Executors",
+        "text": "steps/7/text.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "vscode",
+    "showdashboard": true,
+    "dashboards": [{"name": "Spark UI", "port": 4040}],
+    "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

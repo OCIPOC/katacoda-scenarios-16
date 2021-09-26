@@ -1,0 +1,66 @@
+{
+  "title": "Apache Kafka Installation",
+  "description": "Introduction to Apache Kafka",
+  "difficulty": "Advanced",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Installation scripts",
+      "text": "steps/1/text.md"
+    },
+    {
+      "title": "What is Kafka?",
+      "text": "steps/2/text.md"
+    },    
+	{
+      "title": "Install Java and telnet",
+      "text": "steps/3/text.md"
+    },
+	{
+      "title": "Install Kafka & Zookeeper",
+      "text": "steps/4/text.md"
+    },
+  {
+      "title": "Start Kafka",
+      "text": "steps/5/text.md"
+    },
+    {
+        "title": "Zookeeper",
+        "text": "steps/6/text.md"
+    },
+    {
+        "title": "Install kafkacat",
+        "text": "steps/7/text.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        {
+          "file": "install.sh",
+          "target": "~/"
+        },
+        {
+          "file": "start.sh",
+          "target": "~/"
+        },
+        {
+          "file": "stop.sh",
+          "target": "~/"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "vscode",
+    "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

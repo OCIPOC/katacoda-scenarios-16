@@ -1,0 +1,60 @@
+{
+  "title": "Machine Learning - Chapter 14",
+  "description": "Run Python Code with Jupyter Notebooks",
+  "difficulty": "Beginner",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Jupyter Notebook",
+      "text": "steps/1/text.md"
+    },
+ {
+      "title": "Euclidean Distance",
+      "text": "steps/2/text.md"
+    },    
+	{
+      "title": "Best Matching Unit",
+      "text": "steps/3/text.md"
+    },
+	{
+      "title": "Training Codebook Vectors",
+      "text": "steps/4/text.md"
+    },
+    {
+      "title": "Ionosphere Case Study",
+      "text": "steps/5/text.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "code": "set-env.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        {"file": "prepareContainer.sh"           ,"target": "~/"},
+        {"file": "ionosphere.csv"                ,"target": "~/"},
+        {"file": "learning_rate.xlsx"            ,"target": "~/"},
+        {"file": "best_matching_unit.ipynb"      ,"target": "~/"},
+        {"file": "train_codebook_vectors.ipynb"  ,"target": "~/"},
+        {"file": "euclidean_distance.ipynb"      ,"target": "~/"},
+        {"file": "lvq_ionosphere.ipynb"          ,"target": "~/"}
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal-iframe",
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "Jupyter Notebook",
+        "port": 8888
+      }
+    ],
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}

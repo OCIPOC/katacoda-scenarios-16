@@ -1,0 +1,3 @@
+The power inside a broker is the topic, namely the queues inside it. Now that we have two brokers running, let's create a Kafka topic on them.
+
+Kafka, like almost all modern infrastructure projects, has three ways of building things: through the command line, through programming, and through a web console (in this case the Confluent Control Center). The management (creation, modification, and destruction) of Kafka brokers can be done through programs written in most modern programming languages. If the language is not supported, it could be managed through the Kafka REST API.

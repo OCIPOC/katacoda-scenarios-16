@@ -1,0 +1,64 @@
+{
+  "title": "Machine Learning - Chapter 13",
+  "description": "Run Python Code with Jupyter Notebooks",
+  "difficulty": "Beginner",
+  "time": "20 minutes",
+  "details": {
+    "steps": [{
+      "title": "Jupyter Notebook",
+      "text": "steps/1/text.md"
+    },
+ {
+      "title": "Euclidean Distance",
+      "text": "steps/2/text.md"
+    },    
+	{
+      "title": "Get Neighbors",
+      "text": "steps/3/text.md"
+    },
+	{
+      "title": "Make Predictions",
+      "text": "steps/4/text.md"
+    },
+    {
+      "title": "Abalone Case Study as Classification",
+      "text": "steps/5/text.md"
+      },
+    {
+      "title": "Abalone Case Study as Regression",
+      "text": "steps/6/text.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "code": "set-env.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        {"file": "prepareContainer.sh"              ,"target": "~/"},
+        {"file": "abalone.csv"                      ,"target": "~/"},
+        {"file": "get_neighbors.ipynb"              ,"target": "~/"},
+        {"file": "make_predictions.ipynb"           ,"target": "~/"},
+        {"file": "euclidean_distance.ipynb"         ,"target": "~/"},
+        {"file": "knn_classification_abalone.ipynb" ,"target": "~/"},
+        {"file": "knn_regression_abalone.ipynb"     ,"target": "~/"}
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal-iframe",
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "Jupyter Notebook",
+        "port": 8888
+      }
+    ],
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}

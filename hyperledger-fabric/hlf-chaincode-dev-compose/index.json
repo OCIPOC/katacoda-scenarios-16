@@ -1,0 +1,42 @@
+{
+  "title": "Hyperledger Chaincode Testing in Dev",
+  "description": "Introduction to Hyperledger",
+  "difficulty": "Intermediate",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Clone hyperledger fabric samples",
+      "text": "steps/1/text.md"
+    },
+    {
+      "title": "Terminal 1 - Start the network",
+      "text": "steps/2/text.md"
+    },    
+	{
+      "title": "Terminal 2 - Build & start the chaincode",
+      "text": "steps/3/text.md"
+    },
+	{
+      "title": "Terminal 3 - Use the chaincode",
+      "text": "steps/4/text.md"
+    },
+	{
+      "title": "Update using chaincode",
+      "text": "steps/5/text.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

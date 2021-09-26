@@ -1,0 +1,90 @@
+{
+  "title": "Apache Kafka Streams",
+  "description": "Introduction to Apache Kafka",
+  "difficulty": "Advanced",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Clone Repository",
+      "text": "steps/1/text.md"
+    },
+    {
+      "title": "Kafka Streams in a nutshell",
+      "text": "steps/2/text.md"
+    },    
+	{
+      "title": "Install Gradle",
+      "text": "steps/3/text.md"
+    },
+	{
+      "title": "Java PlainStreamsProcessor",
+      "text": "steps/4/text.md"
+    },
+  {
+      "title": "Java PlainStreamsProcessor",
+      "text": "steps/5/text.md"
+    },
+    {
+        "title": "Running the PlainStreamsProcessor",
+        "text": "steps/6/text.md"
+    },
+    {
+        "title": "Java CustomStreamsProcessor",
+        "text": "steps/9/text.md"
+    },
+    {
+        "title": "Java CustomStreamsProcessor",
+        "text": "steps/10/text.md"
+    },
+    {
+        "title": "Running the CustomStreamsProcessor",
+        "text": "steps/11/text.md"
+    },
+    {
+        "title": "Java AvroStreamsProcessor",
+        "text": "steps/12/text.md"
+    },
+    {
+        "title": "Late event processing",
+        "text": "steps/14/text.md"
+    },
+    {
+        "title": "Basic scenario",
+        "text": "steps/15/text.md"
+    },
+    {
+        "title": "Late event generation",
+        "text": "steps/16/text.md"
+    },
+    {
+        "title": "Running the EventProducer",
+        "text": "steps/17/text.md"
+    },
+    {
+        "title": "Kafka Streams processor",
+        "text": "steps/18/text.md"
+    },
+    {
+        "title": "Running the Streams processor",
+        "text": "steps/19/text.md"
+    },
+    {
+        "title": "Stream processor analysis",
+        "text": "steps/20/text.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "vscode",
+    "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

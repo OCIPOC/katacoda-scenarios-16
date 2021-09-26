@@ -1,0 +1,51 @@
+{
+  "title": "Customize an HTTP endpoint in Azure Functions",
+  "description": "Introduction to Azure Functions",
+  "difficulty": "Intermediate",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Create an Azure Function app",
+      "text": "steps/1/text.md"
+    },
+    {
+      "title": "Create an HTTP triggered function",
+      "text": "steps/2/text.md"
+    },    
+	{
+      "title": "Customize your HTTP function",
+      "text": "steps/3/text.md"
+    },
+	{
+      "title": "Test your API",
+      "text": "steps/4/text.md"
+    },
+	{
+      "title": "Proxies overview",
+      "text": "steps/5/text.md"
+    },
+	{
+      "title": "Setting up the frontend environment",
+      "text": "steps/6/text.md"
+    },
+    {
+        "title": "Creating a proxy on the frontend",
+        "text": "steps/7/text.md"
+  }],
+    "intro": {
+      "code": "set-env.sh",
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "vscode",
+    "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "vscode"
+  }
+}

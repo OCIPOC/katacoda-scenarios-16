@@ -1,0 +1,47 @@
+{
+  "title": "Create a function triggered by Azure Queue storage",
+  "description": "Introduction to Azure Functions",
+  "difficulty": "Intermediate",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Azure Account",
+      "text": "steps/1/text.md"
+    },
+    {
+      "title": "Create an Azure Function app",
+      "text": "steps/2/text.md"
+    },    
+	{
+      "title": "Create a Queue storage triggered function",
+      "text": "steps/3/text.md"
+    },
+	{
+      "title": "Create the queue",
+      "text": "steps/4/text.md"
+    },
+	{
+      "title": "Test the function",
+      "text": "steps/5/text.md"
+    },
+	{
+      "title": "Clean up resources",
+      "text": "steps/6/text.md"
+  }],
+    "intro": {
+      "code": "set-env.sh",
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
