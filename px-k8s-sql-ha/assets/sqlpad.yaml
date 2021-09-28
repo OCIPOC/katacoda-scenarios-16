@@ -1,0 +1,63 @@
+---
+##### Portworx persistent volume claim
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+   name: sqlpad-data
+   annotations:
+     volume.beta.kubernetes.io/storage-class: px-mssql-sc
+spec:
+   accessModes:
+     - ReadWriteOnce
+   resources:
+     requests:
+       storage: 5Gi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sqlpad
+spec:
+  selector:
+    matchLabels:
+      app: sqlpad
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: sqlpad
+    spec:
+      containers:
+      - name: sqlpad
+        image: sqlpad/sqlpad
+        imagePullPolicy: "IfNotPresent"
+        ports:
+        - containerPort: 3010
+        env:
+        - name: SQLPAD_ADMIN
+          value: "admin@sqlpad.com"
+        - name: SQLPAD_ADMIN_PASSWORD
+          value: "admin"
+        - name: SQLPAD_PORT
+          value: "3010"
+        volumeMounts:
+        - name: sqlpad-data
+          mountPath: /var/lib/sqlpad
+      volumes:
+      - name: sqlpad-data
+        persistentVolumeClaim:
+          claimName: sqlpad-data
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: sqlpad
+  labels:
+    app: sqlpad
+spec:
+  ports:
+    - port: 3010
+      nodePort: 30300
+  selector:
+    app: sqlpad
+  type: NodePort
