@@ -1,0 +1,31 @@
+{
+  "title": "Install OpenVINO",
+  "description": "This guide provides step-by-step instructions on how to install the Intel® Distribution of OpenVINO™ toolkit.",
+  "difficulty": "beginner",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Install",
+      "text": "install.md"
+      },
+      {
+        "title": "Install External Software Dependencies",
+        "text": "Dependencies.md"
+      },
+      {
+        "title": "Configure the Models",
+        "text": "Configure.md"
+      }
+      ],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu:1804"
+  }
+}
